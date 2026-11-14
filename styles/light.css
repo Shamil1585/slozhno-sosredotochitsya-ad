@@ -4,13 +4,44 @@
   переключая тему
 */
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --page-bg-color: var(--color-milk);
+    --page-bg-image: url(../images/cover-image-light.png);
+    --text-color: var(--color-graphite);
+    --title-color: var(--color-graphite);
+    --accent-color: var(--color-candy);
+    --on-accent-color: var(--color-graphite);
+    --logo-color: var(--color-cotton);
+    --logo-shadow-color: var(--color-candy);
+    --decor-color: var(--color-graphite);
+    --theme-button-color: var(--color-graphite);
+    --link-color: var(--color-graphite);
+  }
+
+  .header__rec {
+    display: none;
+  }
+}
+
 :root.theme-light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --page-bg-color: var(--color-milk);
+  --page-bg-image: url(../images/cover-image-light.png);
+  --text-color: var(--color-graphite);
+  --title-color: var(--color-graphite);
+  --accent-color: var(--color-candy);
+  --on-accent-color: var(--color-graphite);
+  --logo-color: var(--color-cotton);
+  --logo-shadow-color: var(--color-candy);
+  --decor-color: var(--color-graphite);
+  --theme-button-color: var(--color-graphite);
+  --link-color: var(--color-graphite);
 }
 
-.theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+.theme-light .header__rec {
+  display: none;
 }

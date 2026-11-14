@@ -2,3 +2,64 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  /* Палитра */
+  --color-night: #000028;
+  --color-neon-pink: #ff0070;
+  --color-neon-violet: #db00ff;
+  --color-soft-pink: #f1b2ce;
+  --color-milk: #fff1f7;
+  --color-graphite: #353430;
+  --color-candy: #ff8dcb;
+  --color-cotton: #ffc2e6;
+
+  /* Тёмная схема — основная */
+  --page-bg-color: var(--color-night);
+  --page-bg-image: url(../images/cover-image-dark.png);
+  --text-color: var(--color-soft-pink);
+  --title-color: var(--color-neon-pink);
+  --accent-color: var(--color-neon-pink);
+  --on-accent-color: var(--color-night);
+  --logo-color: var(--color-neon-violet);
+  --logo-shadow-color: var(--color-neon-pink);
+  --decor-color: var(--color-neon-pink);
+  --theme-button-color: var(--color-neon-pink);
+  --link-color: var(--color-neon-pink);
+
+  /* Размеры под мобильный экран */
+  --page-padding: 10px;
+  --page-gap: 40px;
+  --main-gap: 50px;
+  --screen-min-height: 668px;
+  --logo-font-size: 116px;
+  --lamp-top: 10px;
+  --lamp-right: 19px;
+  --theme-menu-top: 75px;
+  --theme-menu-right: 10px;
+  --lead-offset: 55px;
+}
+
+@media (width >= 768px) {
+  :root {
+    --page-padding: 20px;
+    --page-gap: 60px;
+    --main-gap: 80px;
+    --screen-min-height: 1024px;
+    --logo-font-size: 120px;
+    --lamp-top: 20px;
+    --lamp-right: 29px;
+    --theme-menu-top: 192px;
+    --theme-menu-right: 20px;
+    --lead-offset: 162px;
+  }
+}
+
+@media (width >= 1024px) {
+  :root {
+    --screen-min-height: 768px;
+    --logo-font-size: 157px;
+    --theme-menu-top: 20px;
+    --lead-offset: 114px;
+  }
+}
