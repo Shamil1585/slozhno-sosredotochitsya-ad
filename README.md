@@ -41,3 +41,4 @@ python3 -m http.server 8000
 ## Технологии
 
 HTML5, CSS3 (grid, flex, переменные, `prefers-color-scheme`, `clamp`), немного JavaScript для переключателя тем.
+
